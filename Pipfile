@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+black = "*"  # Must install like `pipenv install black --dev --pre`
+ipython = "<8.0"
+isort = "*"
+pylint = "*"
+reorder-python-imports = "*"
+
+[packages]
+loguru = "*"
+
+[requires]
+python_version = "3.9"
+
+[pipenv]
+allow_prereleases = true
