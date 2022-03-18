@@ -4,6 +4,10 @@ line-length = 100
 [tool.isort]
 profile = "black"
 force_single_line = true
+# force_grid_wrap = 0
+# include_trailing_comma = true
+# multi_line_option = 3
+# use_parenthesis = true
 
 [tool.poetry]
 name = "pybase"
@@ -17,7 +21,7 @@ python = "^3.9"
 
 [tool.poetry.dev-dependencies]
 black = "^21.12b0"
-# flake8 = "^4.0.1"
+flake8 = "^4.0.1"
 ipython = "^8.1.1"
 isort = "^5.10.1"
 mypy = "^0.931"
