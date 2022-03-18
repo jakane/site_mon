@@ -31,6 +31,13 @@ repos:
     types: [python]
     require_serial: true
 
+  - id: pylint
+    name: pylint
+    stages: [commit]
+    language: system
+    entry: poetry run pylint
+    types: [python]
+
   - id: pytest
     name: pytest
     stages: [commit]
