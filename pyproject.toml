@@ -13,22 +13,23 @@ force_single_line = true
 name = "pybase"
 version = "0.1.0"
 description = ""
-authors = ["imjuanleonard <julioanthonyleonard@gmail.com>"]
+authors = ["John Kane <John.Kane@Kane.net>"]
 
 [tool.poetry.dependencies]
-loguru = "^0.6.0"
 python = "^3.9"
+loguru = "^0.6.0"
 
 [tool.poetry.dev-dependencies]
-black = "^21.12b0"
-flake8 = "^4.0.1"
+black = "^22.*"
+flake8 = "*"
 ipython = "^8.1.1"
-isort = "^5.10.1"
-mypy = "^0.931"
-pre-commit = "^2.16.0"
+isort = "^5.10.*"
+#ypy = "^0.931"  I don't understand mypy, so not loading
+pre-commit = "*"
 pylint = "^2.12.2"
-pytest = "^6.2.5"
-pytest-cov = "^3.0.0"
+# I am not currently writing tests (bad dev), so not loading
+#pytest = "*"
+#pytest-cov = "*"
 reorder-python-imports = "^3.0.1"
 
 [build-system]
