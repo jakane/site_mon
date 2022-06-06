@@ -1,6 +1,6 @@
-# Title of Project
+# Simple Status Page
 
-© Lumen Technologies.  All Rights Reserved.  Confidential and Proprietary
+© 2022 John Arthur Kane John.Kane@Kane.net
 
 ## Summary
 
@@ -9,4 +9,3 @@
 ## Usage
 
 ### Command 
-

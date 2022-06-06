@@ -1,4 +1,4 @@
-from pybase.factorial import fac
+from site_mon.factorial import fac
 
 
 def test_factorial():

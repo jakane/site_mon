@@ -18,6 +18,7 @@ authors = ["John Kane <John.Kane@Kane.net>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 loguru = "^0.6.0"
+Flask = "^2.1.2"
 
 [tool.poetry.dev-dependencies]
 black = "^22.*"

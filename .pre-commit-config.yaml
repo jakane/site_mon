@@ -61,7 +61,7 @@ repos:
         "--jobs=0",
         "--reports=n",
         "--score=y",
-        "pybase",
+        "site_mon",
         "test",
       ]
 
