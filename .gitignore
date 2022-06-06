@@ -1,4 +1,5 @@
 # Ignore local / user specific configuration file
+docker-images/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -154,4 +155,3 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file
 #  option (not recommended) you can uncomment the following to ignor
 .idea/
-
