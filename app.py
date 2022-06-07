@@ -17,11 +17,6 @@ __all__ = []
 app = Flask(__name__)
 
 
-@app.route("/health")
-def health():
-    return "OK"
-
-
 @app.route("/")
 def kane_net():
     return redirect("http://www.kane.net")
@@ -31,6 +26,18 @@ def kane_net():
 def favicon():
     return send_from_directory(
         os.path.join(app.root_path, "static"), "favicon.ico", mimetype="image/vnd.microsoft.icon"
+    )
+
+
+@app.route("/health")
+def health():
+    return "OK"
+
+
+@app.route("/robots.txt")
+def robots():
+    return send_from_directory(
+        os.path.join(app.root_path, "static"), "robots.txt"
     )
 
 
