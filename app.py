@@ -2,7 +2,7 @@
 
 import os
 
-from flask import Flask
+from flask import Flask, redirect
 
 __version__ = "0.0.1"
 __license__ = None
@@ -17,6 +17,10 @@ app = Flask(__name__)
 @app.route("/health")
 def health():
     return "OK"
+
+@app.route("/")
+def kane_net():
+    return redirect("http://www.kane.net")
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
