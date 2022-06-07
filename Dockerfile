@@ -28,4 +28,5 @@ FROM base as final
 
 COPY --from=builder /venv /venv
 COPY docker-entrypoint.sh app.py ./
+COPY static/favicon.ico static/favicon.ico
 CMD ["./docker-entrypoint.sh"]
