@@ -1,10 +1,15 @@
 """site_mon."""
 
+import logging
 import os
+from logging.config import dictConfig
 
 from flask import Flask
+from flask import has_request_context
 from flask import redirect
+from flask import request
 from flask import send_from_directory
+from flask.logging import default_handler
 
 __version__ = "0.0.1"
 __license__ = None
@@ -13,6 +18,22 @@ __author__ = "John Arthur Kane"
 __email__ = "John.Kane@Kane.net"
 
 __all__ = []
+
+dictConfig({
+    'version': 1,
+    'formatters': {'default': {
+        'format': '%(asctime)s %(levelname)-8s: %(message)s',
+    }},
+    'handlers': {'wsgi': {
+        'class': 'logging.StreamHandler',
+        'stream': 'ext://flask.logging.wsgi_errors_stream',
+        'formatter': 'default'
+    }},
+    'root': {
+        'level': 'INFO',
+        'handlers': ['wsgi']
+    }
+})
 
 app = Flask(__name__)
 
